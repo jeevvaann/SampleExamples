@@ -1,0 +1,104 @@
+19:40:12.678 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+19:40:13.002 request:
+1 > GET https://reqres.in/api/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.11)
+
+19:40:13.242 response time in milliseconds: 234.68
+1 < 200
+1 < Age: 4114
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 6af14d3638dd2e88-BOM
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 16 Nov 2021 14:10:14 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=s0RzbKc1nkgeKONc3A4a0%2FGGZK%2FcJgn169jNj%2FoeLVB0buVpd2Zk8PHsag7yGUa4zAd1%2F4EjR1hyC49UJifsYv%2FXJO9lZNs5h9ufqMFecCZFLXx0yZmt5pQHTqU%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < access-control-allow-origin: *
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+1 < etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < via: 1.1 vegur
+1 < x-powered-by: Express
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+19:40:13.295 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+19:40:13.314 request:
+1 > POST https://reqres.in/api/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 34
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.11)
+{"name":"morpheus","job":"leader"}
+
+19:40:13.667 response time in milliseconds: 356.40
+1 < 201
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 6af14d375ed10eec-BOM
+1 < Connection: keep-alive
+1 < Content-Length: 83
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 16 Nov 2021 14:10:14 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=LATn5X715qlDcQ6ysI33%2FvmefLOo5%2FIdzgbpeptCakJBh8M2fxKJabuMZuQy7d32G%2B5b3x44O2Iyo4VIz%2BXAa0oUa0sCRjgqkLoVO7m95yf5DP4D%2FwyI%2BU90nIM%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < access-control-allow-origin: *
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+1 < etag: W/"53-9IaP8z6VGs836oyz7/VnKTkK5oA"
+1 < via: 1.1 vegur
+1 < x-powered-by: Express
+{"name":"morpheus","job":"leader","id":"86","createdAt":"2021-11-16T14:10:14.494Z"}
+
+19:40:13.677 [print] Response of POST :  {
+  "createdAt": "2021-11-16T14:10:14.494Z",
+  "name": "morpheus",
+  "id": "86",
+  "job": "leader"
+}
+
+19:40:13.744 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+19:40:13.746 request:
+1 > PUT https://reqres.in/api/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 41
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.11)
+{"name":"morpheus","job":"zion resident"}
+
+19:40:14.187 response time in milliseconds: 437.97
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 6af14d39f8d131ed-BOM
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 16 Nov 2021 14:10:15 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=n9nu0wZmfYzU5E2qLqBjcA63XK4lRgSsRwz7ea906WMyDgzDWYFP8yYa%2B365%2F1x4%2Fb9XtiI1XcbN0gRIo1NAcP%2BquPiNnqE1EFFSxfsB2OUDPCqr%2B05FwiK0tNM%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < access-control-allow-origin: *
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+1 < etag: W/"50-Vjdn5BAbdKmaJuADXfjYl0GrtUw"
+1 < via: 1.1 vegur
+1 < x-powered-by: Express
+{"name":"morpheus","job":"zion resident","updatedAt":"2021-11-16T14:10:15.005Z"}
+
+19:40:14.188 [print] Response of PUT :  {
+  "name": "morpheus",
+  "job": "zion resident",
+  "updatedAt": "2021-11-16T14:10:15.005Z"
+}
+
